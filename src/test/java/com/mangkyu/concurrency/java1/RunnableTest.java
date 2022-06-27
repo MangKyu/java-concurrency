@@ -1,4 +1,4 @@
-package com.mangkyu.concurrency.java5;
+package com.mangkyu.concurrency.java1;
 
 import org.junit.jupiter.api.Test;
 

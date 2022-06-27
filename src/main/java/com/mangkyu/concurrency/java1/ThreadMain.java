@@ -1,27 +1,29 @@
-package com.mangkyu.concurrency.java5;
+package com.mangkyu.concurrency.java1;
 
-import org.junit.jupiter.api.Test;
+public class ThreadMain {
 
-class ThreadTest {
+    public static void main(String[] args) {
+        start();
+        run();
+    }
 
-    @Test
-    void threadStart() {
+    private static void run() {
+        Thread thread = new MyThread();
+
+        thread.run();
+        thread.run();
+        thread.run();
+
+        System.out.println("Hello: " + Thread.currentThread().getName());
+    }
+
+    private static void start() {
         Thread thread = new MyThread();
 
         thread.start();
+
         System.out.println("Hello: " + Thread.currentThread().getName());
     }
-
-    @Test
-    void threadRun() {
-        Thread thread = new MyThread();
-
-        thread.run();
-        thread.run();
-        thread.run();
-        System.out.println("Hello: " + Thread.currentThread().getName());
-    }
-
 
     static class MyThread extends Thread {
         @Override

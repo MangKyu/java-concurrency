@@ -1,4 +1,4 @@
-package com.mangkyu.concurrency.java5;
+package com.mangkyu.concurrency.java1;
 
 public class RunnableMain {
 
