@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
-class CompletableFutureCallbackTest {
+class CompletableFuturePostProcessTest {
 
     @Test
     void thenApply() throws ExecutionException, InterruptedException {
